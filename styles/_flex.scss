@@ -1,0 +1,54 @@
+@import "mixins";
+
+.FlexContainer-base {
+  @include FlexContainer-base(flex);
+}
+.Flex-col {
+  flex-direction: column;
+}
+.Flex-row {
+  flex-direction: row;
+}
+.Flex-none {
+  flex: none;
+}
+.Flex-1 {
+  flex: 1 1 0%;
+}
+.Flex-1A {
+  flex: 1 1 auto;
+}
+.Flex-0 {
+  flex: 0 0 0%;
+}
+.Flex-0A {
+  flex: 0 0 auto;
+}
+
+$alignments: flex-start, center, flex-end, stretch;
+$justifications: flex-start, center, flex-end, space-between;
+
+@function generate-class-name($align, $justify) {
+  $align-map: (
+    flex-start: start,
+    center: center,
+    flex-end: end,
+    stretch: stretch,
+  );
+  $justify-map: (
+    flex-start: start,
+    center: center,
+    flex-end: end,
+    space-between: between,
+  );
+
+  @return "#{map-get($align-map, $align)}-#{map-get($justify-map, $justify)}";
+}
+
+@each $align in $alignments {
+  @each $justify in $justifications {
+    .FlexAIJC-#{generate-class-name($align, $justify)} {
+      @include FlexAIJC($align, $justify);
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import "variabels";
+
+//* flex utils
+@mixin FlexContainer-base($display) {
+  position: relative;
+  min-height: 0;
+  min-width: 0;
+  display: $display;
+  flex-shrink: 0;
+  flex-basis: auto;
+  flex-direction: row;
+  justify-content: start;
+  align-items: stretch;
+}
+@mixin FlexAIJC($align, $justify) {
+  align-items: $align;
+  justify-content: $justify;
+}
+
+//* break piontes
+@mixin Mobile {
+  @media (min-width: $sm-screen) {
+    @content;
+  }
+}
+@mixin Tablet {
+  @media (min-width: $md-screen) {
+    @content;
+  }
+}
+@mixin Laptop {
+  @media (min-width: $lg-screen) {
+    @content;
+  }
+}
+@mixin Desktop {
+  @media (min-width: $xl-screen) {
+    @content;
+  }
+}

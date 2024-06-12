@@ -1,0 +1,38 @@
+@import "variabels";
+
+$breakpoints: (
+  sm: $sm-screen,
+  md: $md-screen,
+  lg: $lg-screen,
+  xl: $xl-screen,
+);
+
+$displays: (
+  fh: flex,
+  ifh: inline-flex,
+  bh: block,
+  gh: grid,
+);
+
+$hidden: hidden;
+
+@mixin generate-classes($breakpoint, $key, $display) {
+  .#{$breakpoint}-#{$key} {
+    display: none;
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      display: #{$display};
+    }
+  }
+  .#{$breakpoint}-h#{$key} {
+    display: #{$display};
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      display: none;
+    }
+  }
+}
+
+@each $breakpoint, $value in $breakpoints {
+  @each $key, $display in $displays {
+    @include generate-classes($breakpoint, $key, $display);
+  }
+}

@@ -1,0 +1,28 @@
+@import "variabels";
+@import "mixins";
+@import "flex";
+@import "maxWS";
+@import "displayOnScreen";
+
+.body {
+  background-color: $background-color;
+  &[data-theme="dark"] {
+    background-color: $background-dark-color;
+  }
+}
+
+.fw {
+  width: 100%;
+}
+.fh {
+  height: 100%;
+}
+.MarginCenter-X {
+  margin-right: auto;
+  margin-left: auto;
+}
+.MarginCenter-Y {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+

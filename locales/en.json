@@ -1,0 +1,56 @@
+{
+  "Globals": {
+    "email": "Email",
+    "password": "Password",
+    "userName": "Username",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "phone": "Phone Number",
+    "forgotPassword": "Forgot Password",
+    "rememberMe": "Remember Me",
+    "confirm": "Confirm",
+    "cart": "Cart",
+    "orders": "Orders",
+    "wishlist": "Wishlist",
+    "search": "Search",
+    "loading": "Loading...",
+    "noResult": "Sorry, no results found",
+    "or": "Or",
+    "don'tHaveAccount": "Don't have an account?",
+    "haveAccount": "Already have an account?",
+    "sign-in": "Sign In",
+    "sign-up": "Sign Up",
+    "cairo": "Cairo",
+    "dilveryTo": "Delivery To",
+    "google": "Google",
+    "github": "GitHub"
+  },
+  "Errors": {
+    "fieldReqired": "This field is required",
+    "emailInvalid": "Invalid email address"
+  },
+  "Metadata": {
+    "cartPage": {
+      "title": "Cart"
+    }
+  },
+  "Components": {
+    "searchBar": {
+      "placeholder": "{name} search here..."
+    }
+  },
+  "pages": {
+    "auth": {
+      "welcomeTitle": "Welcome to the E-commerce!",
+      "welcomeDescription": "Get ready for the best shopping experience with us!",
+      "login": {
+        "welcomeTitle": "Welcome back!",
+        "welcomeDescription": "Go to fast login for continue journey!"
+      },
+      "register": {
+        "welcomeTitle": "Welcome",
+        "welcomeDescription": "Create an account to start an enjoyable shopping journey"
+      }
+    }
+  }
+}

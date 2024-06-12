@@ -1,0 +1,56 @@
+{
+  "Globals": {
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "userName": "اسم المستخدم",
+    "firstName": "الاسم الأول",
+    "lastName": "اسم العائلة",
+    "phone": "رقم الهاتف",
+    "forgotPassword": "نسيت كلمة المرور",
+    "rememberMe": "تذكرني",
+    "confirm": "تأكيد",
+    "cart": "عربة التسوق",
+    "orders": "الطلبات",
+    "wishlist": "قائمة الرغبات",
+    "search": "البحث",
+    "loading": "جاري التحميل...",
+    "noResult": "للأسف لا توجد نتائج",
+    "or": "أو",
+    "don'tHaveAccount": "اذا كنت لا تمتلك حساب؟",
+    "haveAccount": "اذا كنت لديك حساب؟",
+    "sign-in": "تسجيل الدخول",
+    "sign-up": "انشاء حساب",
+    "cairo": "القاهرة",
+    "dilveryTo": "توصيل إلى",
+    "google": "جوجل",
+    "github": "جيثب"
+  },
+  "Errors": {
+    "fieldReqired": "هذا الحقل مطلوب",
+    "emailInvalid": "البريد الإلكتروني غير صالح"
+  },
+  "Metadata": {
+    "cartPage": {
+      "title": "عربة التسوق"
+    }
+  },
+  "Components": {
+    "searchBar": {
+      "placeholder": "{name} ابحث هنا..."
+    }
+  },
+  "pages": {
+    "auth": {
+      "welcomeTitle": "أهلاً بيك في عالم التسوق أونلاين",
+      "welcomeDescription": "استعد عشان تلاقي كل اللي نفسك فيه بنقرة زر. جاهز؟ يلا بينا!",
+      "login": {
+        "welcomeTitle": "أهلاً برجوعك",
+        "welcomeDescription": "سجل الدخول بسرعة لاستكمال رحلتك"
+      },
+      "register": {
+        "welcomeTitle": "أهلاً بك",
+        "welcomeDescription": "إنشأ حساب لبدء رحلة تسوق ممتعة"
+      }
+    }
+  }
+}

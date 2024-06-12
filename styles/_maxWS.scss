@@ -1,0 +1,16 @@
+@import "variabels";
+
+$screens: (
+  sm: $sm-screen,
+  md: $md-screen,
+  lg: $lg-screen,
+  xl: $xl-screen,
+  2xl: $_2xl-screen,
+  3xl: $_3xl-screen,
+);
+
+@each $name, $screen in $screens {
+  .MaxWS-#{$name} {
+    max-width: $screen;
+  }
+}

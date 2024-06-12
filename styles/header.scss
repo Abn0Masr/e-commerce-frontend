@@ -1,0 +1,79 @@
+@import "variabels";
+@import "mixins";
+
+.HeaderBase {
+  height: $header-height;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  @include Laptop {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  background-color: $primary-color;
+}
+
+.HeaderLeftSide {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  column-gap: 0.5rem;
+}
+
+.Banner {
+  position: relative;
+  aspect-ratio: 16/9;
+  height: 100%;
+  img {
+    object-fit: cover;
+    mix-blend-mode: lighten;
+  }
+}
+
+.UserAddressContainer {
+  display: none;
+  @include Desktop {
+    display: flex;
+  }
+}
+
+.NavContainer {
+  height: $square-height;
+  column-gap: 1rem;
+}
+
+%NavItem {
+  position: relative;
+  display: inline-flex;
+  align-items: flex-end;
+  column-gap: 0.5rem;
+  line-height: 1;
+  color: white;
+}
+
+.CartLink,
+.MenuButton,
+.OrderLink,
+.WishlistLink,
+.LanguageButton {
+  @extend %NavItem;
+  .label {
+    display: none;
+    @include Mobile {
+      display: block;
+    }
+  }
+}
+
+.MenuButton {
+  @include Desktop {
+    display: none;
+  }
+}
+
+.OrderLink,
+.WishlistLink,
+.LanguageButton {
+  display: none;
+  @include Desktop {
+    display: inline-flex;
+  }
+}

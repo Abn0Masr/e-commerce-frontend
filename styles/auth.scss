@@ -1,0 +1,41 @@
+@import "mixins";
+@import "variabels";
+
+.AuthContainer {
+  @include Tablet {
+    flex-direction: row;
+  }
+}
+
+.AuthSide {
+  background-color: $secondary-color;
+  @include Tablet {
+    max-width: 400px;
+    height: 100%;
+  }
+}
+
+.AuthMain {
+  padding: 0.5rem 1rem;
+  @include Tablet {
+    width: max-content;
+  }
+  @include Mobile {
+    height: 100%;
+  }
+}
+
+.RegisterContainer,
+.LoginContainer {
+  display: inline-flex;
+  padding: 1rem 0.5rem;
+  gap: 1rem;
+}
+
+.MobileWelcomeMessage {
+  padding: 1rem;
+  row-gap: .25rem;
+  @include Tablet {
+    display: none;
+  }
+}
