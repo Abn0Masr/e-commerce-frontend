@@ -1,0 +1,11 @@
+@import "../../styles/mixins";
+@import "../../styles/variabels";
+
+.DrawerContainer {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  inset: 0;
+  transform: translate(0, 0);
+}

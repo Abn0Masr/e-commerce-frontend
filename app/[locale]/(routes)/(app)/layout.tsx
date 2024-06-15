@@ -1,9 +1,11 @@
+import Drawer from "@/components/drawer/Drawer";
 import Header from "@/components/layouts/header/Header";
 import FlexContainer from "@/components/ui/FlexContainer";
 
 const AppLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
+      <Drawer />
       <Header />
       <FlexContainer
         component={"main"}
